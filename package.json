@@ -1,0 +1,18 @@
+{
+  "name": "sema",
+  "private": true,
+  "version": "1.0.0",
+  "description": "SEMA - سیستم مدیریت اداری",
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev --workspace apps/api",
+    "dev:web": "npm run dev --workspace apps/web",
+    "seed": "npm run seed --workspace apps/api",
+    "build:web": "npm run build --workspace apps/web",
+    "start:api": "npm run start --workspace apps/api",
+    "start:web": "npm run start --workspace apps/web"
+  }
+}
